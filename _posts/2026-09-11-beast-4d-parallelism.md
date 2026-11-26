@@ -3,7 +3,7 @@ title: "BEAST: Bayesian weather forecasting with 4D parallelism at exascale"
 date: 2026-09-11
 redirect_from:
   - /blog/2026/11/beast-4d-parallelism/
-excerpt: "An overview of BEAST, a Bayesian AI weather model that estimates both forecast and model uncertainty, and the four-way parallelization that made it trainable on 20,480 GPUs."
+excerpt: "An overview of BEAST, a Bayesian AI weather model that estimates both forecast and model uncertainty, and the 4D orthogonal parallelization scheme that made it trainable on 20,480 GPUs."
 tags:
   - weather
   - parallelism
