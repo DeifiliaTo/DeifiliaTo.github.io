@@ -15,11 +15,9 @@ tags:
 
 [Paper (arXiv)](https://arxiv.org/abs/2609.12815) · [Code](https://github.com/7SEAS-Lab/beast) · [Gordon Bell artifact](https://github.com/7SEAS-Lab/beast-gb-climate-artifact)
 
-<div class="result-cards">
-  <div class="result-card"><span class="result-card__number">3.96 EFLOP/s</span><span class="result-card__label">peak training performance on 20,480 GPUs</span></div>
-  <div class="result-card"><span class="result-card__number">96</span><span class="result-card__label">weight samples drawn at every training step</span></div>
-  <div class="result-card"><span class="result-card__number">&lt; 20 s</span><span class="result-card__label">for a 15-day global forecast</span></div>
-</div>
+* **3.96 EFLOP/s** peak training performance on 20,480 GPUs.
+* **Ensembles of any size.** BEAST learns a distribution over its weights, so after training it can draw as many ensemble members as needed, without retraining.
+* **Under 20 seconds** for a 15-day global forecast.
 
 A forecast is most useful when it also says how confident it is. When a forecast turns out wrong, there are two possible reasons: the weather was inherently hard to predict, or the model had not learned the situation well. This post describes a model that estimates both, and the parallelization needed to train it.
 
@@ -99,7 +97,7 @@ We ran experiments on two European supercomputers: **JUPITER** at Forschungszent
 <figcaption>Scaling on JUPITER and LUMI. (a) Weak scaling of throughput per GPU. (b) Strong scaling of peak performance, up to 5,120 JUPITER nodes. (c) Weak scaling of ensemble throughput. (d) Strong scaling of forecast throughput. <span class="credit">Figure 3 from the paper, CC BY 4.0.</span></figcaption>
 </figure>
 
-The full training run used 384 JUPITER nodes with **96 weight samples per step**. One epoch over the 40-year dataset took 25.45 hours, and training took nearly one million gradient updates.
+The full training run used 384 JUPITER nodes with 96 weight samples per step. One epoch over the 40-year dataset took 25.45 hours, and training took nearly one million gradient updates.
 
 ## Forecast skill
 
@@ -139,7 +137,7 @@ We also examined extreme events, where uncertainty estimates matter most for dec
 
 ## Inference
 
-A trained BEAST model produces a **15-day global forecast in under 20 seconds**. Each ensemble member runs on its own set of GPUs, so larger ensembles need more GPUs but not more time. The paper reports that BEAST generates large ensembles 3 to 4 times faster than the current best AI model.
+A trained BEAST model produces a **15-day global forecast in under 20 seconds**. Each ensemble member runs on its own set of GPUs, so larger ensembles need more GPUs but not more time. The ensemble size is also not fixed by training. Each member uses its own sample from the learned weight distribution, so any number of members can be drawn. The model was trained with 96 samples per step, and the table above includes ensembles of 768 members. The paper reports that BEAST generates large ensembles 3 to 4 times faster than the current best AI model.
 
 ## Limitations
 
