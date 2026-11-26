@@ -6,7 +6,7 @@ permalink: /publication/2026-pasc-domain-tensor-parallelism
 redirect_from:
   - /publication/2025-07-08-Jigsaw
   - /publication/2024-07-08-Jigsaw
-excerpt: 'Combining domain and tensor parallelism to train multi-billion-parameter AI weather models.'
+excerpt: 'PASC26 Best Paper. Combining domain and tensor parallelism to train multi-billion-parameter AI weather models.'
 date: 2026-06-28
 venue: 'Proceedings of the Platform for Advanced Scientific Computing Conference (PASC ’26)'
 paperurl: 'https://doi.org/10.1145/3815572.3815765'

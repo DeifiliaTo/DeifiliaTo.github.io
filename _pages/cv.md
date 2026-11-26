@@ -25,6 +25,10 @@ Work experience
 
 Honors & Awards
 =====
+* 11.2026: Finalist, ACM Gordon Bell Prize for Climate Modelling (BEAST team, KIT, JSC and CSC), *SC26*
+* 06.2026: Best Paper Award, *PASC26*
+* 06.2026: WHPC Poster Prize for the best WHPC research poster, *ISC 2026*
+* 2026: NHR|WHPC travel grant fellow, *NHR Women in HPC Chapter*
 * 09.2022 - 08.2024: Excellence Scholarship & Opportunity (ESOP) Programme, *ETH Foundation*
 * 09.2019: Hatch Scholarship, *Hatch Ltd. Foundation*
 * 04.2019: Globalink Research Award, *Mitacs Canada*
