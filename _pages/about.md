@@ -6,8 +6,9 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I'm currently a PhD candidate in Computer Science at Karlsruhe Institute of Technology.
-I have a background in **computational science**, specifically fluid dynamic simulations, with my Master's at ETH Zürich. Before that, I did my Bachelor's in Chemical Engineering at McGill University.
+I'm a PhD candidate in Computer Science at Karlsruhe Institute of Technology, working on **scalable AI**: the parallel algorithms that let large models train efficiently on entire supercomputers. Most of my work focuses on AI weather and climate models, where high-resolution data pushes training to the limits of today's hardware.
+
+I came to this from **computational science**: I did my Master's in Computational Science and Engineering at ETH Zürich, working on fluid dynamics simulations, and my Bachelor's in Chemical Engineering at McGill University.
 
 ## What I work on
 I'm interested in getting the most out of large GPU systems when training AI models, in particular:
