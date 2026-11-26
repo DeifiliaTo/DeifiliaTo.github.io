@@ -23,7 +23,7 @@ repository               : "DeifiliaTo/deifiliakieckhefen.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "deifilia_profile.png"
   name             : "Deifilia Kieckhefen"
   pronouns         : # example: "she/her"  
   bio              : "PhD candidate in distributed machine learning algorithms"
