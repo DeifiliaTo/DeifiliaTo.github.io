@@ -29,7 +29,7 @@ Honors & Awards
 * 06.2026: Best Paper Award, *PASC26*
 * 06.2026: WHPC Poster Prize for the best WHPC research poster, *ISC 2026*
 * 2026: NHR|WHPC travel grant fellow, *NHR Women in HPC Chapter*
-* 09.2022 - 08.2024: Excellence Scholarship & Opportunity (ESOP) Programme, *ETH Foundation*
+* 2021: Excellence Scholarship & Opportunity (ESOP) Programme, Computational Science and Engineering, *ETH Foundation*
 * 09.2019: Hatch Scholarship, *Hatch Ltd. Foundation*
 * 04.2019: Globalink Research Award, *Mitacs Canada*
 * 04.2018: DAAD RISE Stipendium, *Deutscher Akademischer Austauschdienst*
