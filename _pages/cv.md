@@ -20,7 +20,7 @@ Work experience
 ======
 * 10.2022-03.2023: Fluid simulation engineering intern, **BASF, Ludwigshafen am Rhein**
 * 05.2021-08.2021: Data science intern in Global Banking and Markets, **HSBC, Toronto, ON**
-* 04.2022-08.2021: Developer of Kinetic Monte Carlo algorithm, **Apothesis, Remote work**
+* 04.2021-08.2021: Developer of Kinetic Monte Carlo algorithm, **Apothesis, Remote work**
 * 05.2019-08.2019: Student internship: Simulation of Fluid-Bed Spray Granulation using rCFD. **Hamburg University of Technology (TUHH), Institute of Solids Process Engineering and Particle Technology**
 
 Honors & Awards

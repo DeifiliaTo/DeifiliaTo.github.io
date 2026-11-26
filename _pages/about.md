@@ -6,7 +6,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I'm currently a PhD candidate in Computer Science at Karlsruhe Institute of Technology. # URL to site
+I'm currently a PhD candidate in Computer Science at Karlsruhe Institute of Technology.
 I have a background in **computational science**, specifically fluid dynamic simulations, with my Master's at ETH Zürich. Before that, I did my Bachelor's in Chemical Engineering at McGill University.
 
 ## My current interests 
