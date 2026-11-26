@@ -10,6 +10,6 @@ excerpt: 'PASC26 Best Paper. Combining domain and tensor parallelism to train mu
 date: 2026-06-28
 venue: 'Proceedings of the Platform for Advanced Scientific Computing Conference (PASC ’26)'
 paperurl: 'https://doi.org/10.1145/3815572.3815765'
-bibtexurl: 'https://deifiliato.github.io/deifiliakieckhefen.github.io/files/pasc26.bib'
+bibtexurl: 'https://deifiliato.github.io/files/pasc26.bib'
 citation: 'Deifilia Kieckhefen, Markus Götz, Lars Helge Heyen, Achim Streit, and Charlotte Debus. 2026. Combining Domain and Tensor Parallelism to Train Multi-billion-parameter AI Weather Models. In Proceedings of the Platform for Advanced Scientific Computing Conference (PASC ’26). ACM, 1–13. https://doi.org/10.1145/3815572.3815765'
 ---
