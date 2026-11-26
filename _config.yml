@@ -85,6 +85,8 @@ publication_category:
     title: 'Publications'
   preprints:
     title: 'Preprints'
+  conference:
+    title: 'Conference abstracts'
   talks:
     title: 'Conference talks'
 
