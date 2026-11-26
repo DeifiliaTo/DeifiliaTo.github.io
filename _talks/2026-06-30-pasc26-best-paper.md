@@ -4,7 +4,7 @@ collection: talks
 type: "Best Paper plenary presentation"
 permalink: /talks/pasc26
 venue: "PASC26"
-date: 2026-06-29
+date: 2026-06-30
 location: "Bern, Switzerland"
 link: "https://pasc-conference.org/editions/pasc26/full-program/plenary-sessions/keynote-presentations/"
 ---
