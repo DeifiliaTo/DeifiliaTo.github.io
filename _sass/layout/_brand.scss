@@ -1,0 +1,238 @@
+/* ==========================================================================
+   BRAND THEME LAYER
+   Midnight navy, apricot and terracotta on a warm off-white.
+   Loaded last; overrides the default theme.
+   ========================================================================== */
+
+:root {
+  --brand-navy: #0f1d36;        // header, headings, footer
+  --brand-accent: #f4a261;      // apricot: rules, card edges, avatar ring
+  --brand-accent-2: #c0502e;    // terracotta: dates, icons, alternate card edges
+  --brand-accent-soft: #fbd9bd; // apricot tint, for text selection
+  --card-bg: #f6ede2;
+  --card-bg-hover: #f2e4d3;
+  --heading-color: #0f1d36;
+  --masthead-bg: #0f1d36;
+  --masthead-text: #ffffff;
+  --footer-text: #cbd3e1;
+  --footer-link: #f4a261;
+  --pattern-dot: rgba(15, 29, 54, 0.11);
+  --corner-1: rgba(244, 162, 97, 0.55);
+  --corner-2: rgba(192, 80, 46, 0.45);
+
+  --global-bg-color: #fffaf4;
+  --global-base-color: #0f1d36;
+  --global-text-color: #2b2a2e;
+  --global-text-color-light: #625f66;
+  --global-link-color: #b0442a;
+  --global-link-color-hover: #0f1d36;
+  --global-link-color-visited: #94391f;
+  --global-masthead-link-color: #ffffff;
+  --global-masthead-link-color-hover: #f4a261;
+  --global-footer-bg-color: #0f1d36;
+  --global-border-color: #ece2d5;
+  --global-dark-border-color: #ddd0bf;
+  --global-thead-color: #f6ede2;
+  --global-code-background-color: #f6ede2;
+}
+
+html[data-theme="dark"] {
+  --brand-navy: #0c1424;
+  --brand-accent: #f4a261;
+  --brand-accent-2: #f08a6c;
+  --brand-accent-soft: #5a3a22;
+  --card-bg: #1b2843;
+  --card-bg-hover: #22304f;
+  --heading-color: #ffffff;
+  --masthead-bg: #0c1424;
+  --masthead-text: #ffffff;
+  --footer-text: #a9afbd;
+  --footer-link: #f4a261;
+  --pattern-dot: rgba(255, 255, 255, 0.07);
+  --corner-1: rgba(244, 162, 97, 0.45);
+  --corner-2: rgba(240, 138, 108, 0.4);
+
+  --global-bg-color: #121c30;
+  --global-base-color: #2b3d66;
+  --global-text-color: #e8e4dc;
+  --global-text-color-light: #a9afbd;
+  --global-link-color: #f08a6c;
+  --global-link-color-hover: #ffffff;
+  --global-link-color-visited: #f4a98f;
+  --global-masthead-link-color: #ffffff;
+  --global-masthead-link-color-hover: #f4a261;
+  --global-footer-bg-color: #0c1424;
+  --global-border-color: #26355a;
+  --global-dark-border-color: #26355a;
+  --global-thead-color: #1b2843;
+  --global-code-background-color: #1b2843;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6,
+.page__title,
+.archive__item-title,
+.author__name {
+  color: var(--heading-color);
+}
+
+.page__title {
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+/* Masthead: navy bar with an apricot rule underneath */
+.masthead,
+.greedy-nav,
+.masthead__menu-item {
+  background: var(--masthead-bg);
+}
+
+.masthead::after {
+  height: 4px;
+  background: var(--brand-accent);
+}
+
+.masthead__menu-item--lg a {
+  color: var(--masthead-text) !important;
+  font-weight: 800;
+}
+
+.greedy-nav .visible-links a:before {
+  background: var(--brand-accent);
+  height: 3px;
+}
+
+// The overflow dropdown on small screens keeps a light background
+.greedy-nav .hidden-links a {
+  color: var(--heading-color);
+
+  &:hover {
+    color: var(--brand-accent-2);
+  }
+}
+
+/* Background: faint dot grid */
+body {
+  background-image: radial-gradient(var(--pattern-dot) 1px, transparent 1.3px);
+  background-size: 22px 22px;
+}
+
+/* Section headings: terracotta diamond followed by an apricot rule */
+.page__content h2,
+.archive > h2 {
+  border-bottom: none;
+  padding-bottom: 0;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 10px;
+    margin-top: 0.35em;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='10'%3E%3Cpolygon points='5,0 10,5 5,10 0,5' fill='%23c0502e'/%3E%3Cline x1='15' y1='5' x2='64' y2='5' stroke='%23f4a261' stroke-width='2.5'/%3E%3C/svg%3E") no-repeat;
+  }
+}
+
+html[data-theme="dark"] .page__content h2::after,
+html[data-theme="dark"] .archive > h2::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='10'%3E%3Cpolygon points='5,0 10,5 5,10 0,5' fill='%23f08a6c'/%3E%3Cline x1='15' y1='5' x2='64' y2='5' stroke='%23f4a261' stroke-width='2.5'/%3E%3C/svg%3E");
+}
+
+.archive > h2 + hr {
+  display: none;
+}
+
+/* Archive lists (publications, talks, blog): warm cards, edges alternate */
+.list__item .archive__item {
+  margin: 0.9em 0;
+  padding: 0.1em 1.1em 0.6em;
+  background: var(--card-bg);
+  border-left: 4px solid var(--brand-accent);
+  border-radius: 8px;
+  transition: background 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+  &:hover {
+    background: var(--card-bg-hover);
+    box-shadow: 0 2px 10px rgba(15, 29, 54, 0.08);
+  }
+}
+
+.list__item:nth-of-type(even) .archive__item {
+  border-left-color: var(--brand-accent-2);
+}
+
+/* Folded-corner triangle on each card, apricot and terracotta alternating */
+.list__item .archive__item {
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 34px;
+    height: 34px;
+    background: linear-gradient(225deg, var(--corner-1) 50%, transparent 50%);
+    pointer-events: none;
+  }
+}
+
+.list__item:nth-of-type(even) .archive__item::after {
+  background: linear-gradient(225deg, var(--corner-2) 50%, transparent 50%);
+}
+
+.list__item .archive__item .archive__item-title {
+  margin-top: 0.6em;
+}
+
+.archive__item .page__meta {
+  color: var(--brand-accent-2);
+}
+
+.archive__item-title a {
+  color: var(--heading-color);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--global-link-color);
+  }
+}
+
+/* Sidebar */
+.author__avatar img {
+  @include breakpoint($large) {
+    border: 3px solid var(--brand-accent);
+    padding: 4px;
+  }
+}
+
+.author__urls .fa,
+.author__urls .fas,
+.author__urls .fab,
+.author__urls .ai {
+  color: var(--brand-accent-2);
+}
+
+/* Footer: navy with apricot links */
+.page__footer {
+  border-top: 4px solid var(--brand-accent);
+  color: var(--footer-text);
+
+  a,
+  .page__footer-follow .social-icons a,
+  .page__footer-copyright a {
+    color: var(--footer-link);
+  }
+
+  .fa, .fas, .fab {
+    color: var(--footer-link) !important;
+  }
+}
+
+/* Text selection */
+::selection {
+  background: var(--brand-accent-soft);
+  color: var(--heading-color);
+}
