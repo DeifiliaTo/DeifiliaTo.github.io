@@ -9,8 +9,12 @@ redirect_from:
 I'm currently a PhD candidate in Computer Science at Karlsruhe Institute of Technology.
 I have a background in **computational science**, specifically fluid dynamic simulations, with my Master's at ETH Zürich. Before that, I did my Bachelor's in Chemical Engineering at McGill University.
 
-## My current interests 
-are in distributed computing, to develop general algorithms for parallel machine learning training schemes.
+## What I work on
+I'm interested in getting the most out of large GPU systems when training AI models, in particular:
+
+* **Training at full-system scale:** designing parallel algorithms that let one model train efficiently across an entire supercomputer, not just a handful of nodes (e.g. [BEAST](/blog/2026/09/beast-4d-parallelism/)).
+* **Reaching peak performance:** closing the gap between what the hardware can do and what training actually achieves, by combining and tuning data, model, domain and tensor parallelism (e.g. [Jigsaw](/blog/2026/06/jigsaw-domain-tensor-parallelism/)).
+* **Low precision for science:** making low-precision arithmetic fast *and* accurate enough for scientific regression tasks such as weather forecasting, where small numerical errors add up.
 
 ## In the past
 I have developed computational fluid dynamic (CFD) solvers using novel techniques such as recurrent CFD, and coupled solid--fluid simulations to predict the deposition of metal particles in metal printing processes.
